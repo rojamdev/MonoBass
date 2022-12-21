@@ -1,7 +1,7 @@
 # MonoBass
 A plugin that sums all channels to mono below an adjustable frequency, useful for mastering purposes.
 
-## Compiling as a VST3
+## Compiling as a VST3 or AU
 - Install [JUCE and the Projucer](https://juce.com/discover/projucer)
 - Clone or download this repository
 - Open the .jucer file using Projucer and add your IDE in the exporters section
