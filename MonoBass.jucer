@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="HTlHaT" name="MonoBass" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="RojamDSP" companyName="RojamDSP">
   <MAINGROUP id="bw4sZu" name="MonoBass">
     <GROUP id="{0C5BBA69-09E2-E9F8-1326-247BB19C409F}" name="Source">
       <FILE id="zkVSp1" name="BandSplitter.h" compile="0" resource="0" file="Source/BandSplitter.h"/>
-      <FILE id="VY2gIQ" name="CustomLookAndFeel.h" compile="0" resource="0"
-            file="Source/CustomLookAndFeel.h"/>
       <FILE id="jqS2k4" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="zd0BFa" name="PluginProcessor.h" compile="0" resource="0"

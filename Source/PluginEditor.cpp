@@ -5,12 +5,13 @@
 MonoBassAudioProcessorEditor::MonoBassAudioProcessorEditor (MonoBassAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    setSize (200, 200);
+    setSize (200, 250);
 
     addAndMakeVisible(freqSlider);
     freqAttachment = std::make_unique<SliderAttachment>(audioProcessor.apvts, FREQ_ID, freqSlider);
     freqSlider.setSliderStyle(juce::Slider::SliderStyle::Rotary);
-    freqSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, getWidth(), getHeight() / 5);
+    freqSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, getWidth(), getHeight() / 10);
+    freqSlider.setColour(juce::Slider::textBoxOutlineColourId, juce::Colours::transparentBlack);
 
     addAndMakeVisible(freqLabel);
     freqLabel.setText("Frequency", juce::NotificationType::dontSendNotification);
@@ -29,6 +30,6 @@ void MonoBassAudioProcessorEditor::paint (juce::Graphics& g)
 
 void MonoBassAudioProcessorEditor::resized()
 {
-    freqSlider.setBounds(getBounds());
-    freqLabel.setBounds(0, getHeight() * (4 / 5), getWidth(), getHeight() * (1 / 5));
+    freqSlider.setBounds(0, 10, getWidth(), getWidth());
+    freqLabel.setBounds(0, 210, getWidth(), getHeight() / 10);
 }
